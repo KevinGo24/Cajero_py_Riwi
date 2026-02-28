@@ -27,7 +27,8 @@ for i in range(cantidad):
             else:
                 Saldo_inicial += opcion_deposito
                 print(f"Has depositado {opcion_deposito}. Tu nuevo saldo es: {Saldo_inicial}")
-else:
+
+if opcion < 1 or opcion > 3:
     print("Operación no válida. Por favor, selecciona una opción del 1 al 3.")
 # Mostrar saldo final
 print(f"Saldo final: {Saldo_inicial}")
